@@ -1,0 +1,93 @@
+@import "common.css";
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.certificate {
+    position: relative;
+    width: 20rem;
+    height: 22rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.certificate img {
+    height: 100%;
+}
+
+.certificate div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.75rem 1.5rem;
+    background-color: #2020209d;
+    color: white;
+}
+
+.final-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .final-card {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 852px) {
+    section {
+        gap: 1rem;
+    }
+
+    .certificate {
+        height: 20rem;
+    }
+
+    .certificate div {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width: 768px) {
+    .certificate {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .certificate div {
+        padding: 1.25rem
+    }
+
+    .certificate div p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate {
+        width: 11rem;
+        height: 14rem;
+    }
+
+    .certificate div {
+        padding: 1rem
+    }
+
+    .certificate div p {
+        font-size: 0.5rem;
+    }
+}

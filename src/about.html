@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <meta name="description" content="Learn more about Hasset Dejene, a software engineering student specializing in web development and UI/UX design.">
+  <link rel="stylesheet" href="styles/about.css">
+</head>
+
+<body>
+  <header>
+    <h1><span>hazumte</span></h1>
+    <nav>
+      <div id="desktop-nav">
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='about.html'">About</button>
+        <button onclick="location.href='skills.html'">Skills</button>
+        <button onclick="location.href='services.html'">Services</button>
+        <button onclick="location.href='certificates.html'">Certificates</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+      </div>
+      <div id="mobile-nav">
+        <button id="active-page">About</button>
+        <div id="menu-trigger" onclick="toggleDropdown()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="16" r="2"></circle>
+            <circle cx="16" cy="16" r="2"></circle>
+            <circle cx="24" cy="16" r="2"></circle>
+          </svg>
+        </div>
+        <div id="dropdown-menu">
+          <button onclick="location.href='../index.html'">Home</button>
+          <button onclick="location.href='skills.html'">Skills</button>
+          <button onclick="location.href='services.html'">Services</button>
+          <button onclick="location.href='certificates.html'">Certificates</button>
+          <button onclick="location.href='contact.html'">Contact</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-1 card">
+      <p>
+        I am proficient in coding languages such as Java and Python, and I am particularly interested in the field of
+        data
+        analysis within cybersecurity. I believe that these areas hold significant potential for the future and align
+        with
+        my interests and skills. Additionally, I really enjoy playing the guitar.
+      </p>
+    </section>
+
+    <section class="section-2">
+      <img src="images/code.jpg" alt="Coding">
+      <img src="images/cycle.jpg" alt="Cycling">
+      <img src="images/guitar.webp" alt="Guitar">
+    </section>
+  </main>
+
+  <script src="scripts/nav.js"></script>
+</body>
+
+</html>

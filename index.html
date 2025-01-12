@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <meta name="description" content="Welcome to Hasset Dejene's portfolio website, showcasing skills, services, and certifications in software engineering.">
+  <link rel="stylesheet" href="src/styles/index.css">
+</head>
+
+<body>
+  <header>
+    <h1><span>hazumte</span></h1>
+    <nav>
+      <div id="desktop-nav">
+        <button onclick="location.href='src/index.html'">Home</button>
+        <button onclick="location.href='src/about.html'">About</button>
+        <button onclick="location.href='src/skills.html'">Skills</button>
+        <button onclick="location.href='src/services.html'">Services</button>
+        <button onclick="location.href='src/certificates.html'">Certificates</button>
+        <button onclick="location.href='src/contact.html'">Contact</button>
+      </div>
+      <div id="mobile-nav">
+        <button id="active-page">Home</button>
+        <div id="menu-trigger" onclick="toggleDropdown()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="16" r="2"></circle>
+            <circle cx="16" cy="16" r="2"></circle>
+            <circle cx="24" cy="16" r="2"></circle>
+          </svg>
+        </div>
+        <div id="dropdown-menu">
+          <button onclick="location.href='src/about.html'">About</button>
+          <button onclick="location.href='src/skills.html'">Skills</button>
+          <button onclick="location.href='src/services.html'">Services</button>
+          <button onclick="location.href='src/certificates.html'">Certificates</button>
+          <button onclick="location.href='src/contact.html'">Contact</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card section-1">
+        <p>Hello,</p>
+        <p>My name is Hasset Dejene, a third-year software engineering
+          student at AAiT. I love web development and user interface/user
+          experience (UI/UX) designing. I like futuristic and minimalistic looks
+          which are simple yet beautiful. I’m a big fan of Apple and their
+          designs. I find blurred backgrounds and curved corners really
+          appealing.
+        </p>
+      </div>
+      <img class="section-1-img" src="src/images/profile.jpg" alt="Me">
+
+      <div class="card section-2">
+        <p>Let’s Explore my Portfolio!</p>
+      </div>
+      <img class="section-2-img" src="src/images/profile.jpg" alt="Me">
+    </section>
+  </main>
+
+  <script src="src/scripts/nav.js"></script>
+</body>
+
+</html>

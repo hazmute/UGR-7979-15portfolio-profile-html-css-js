@@ -1,0 +1,54 @@
+@import "common.css";
+
+.card {
+    max-width: 75vw;
+    padding: 2.5rem;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.section-2 img {
+    height: 320px;
+    width: 360px;
+    border-radius: 0.75rem;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 85vw;
+        padding: 2rem;
+    }
+
+    .section-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .section-2 img {
+        height: 240px;
+        width: 280px;
+    }
+}
+
+/* Small screens (mobile, 480px and below) */
+@media (max-width: 480px) {
+    .card {
+        max-width: 90vw;
+        padding: 1.5rem;
+    }
+
+    .section-2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .section-2 img {
+        height: 200px;
+        width: 240px;
+    }
+}

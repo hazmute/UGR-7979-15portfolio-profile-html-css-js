@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <meta name="description" content="Explore the programming languages, general skills, tools, frontend, and backend proficiencies of Hasset Dejene.">
+  <link rel="stylesheet" href="styles/skills.css">
+</head>
+
+<body>
+  <header>
+    <h1><span>hazumte</span></h1>
+    <nav>
+      <div id="desktop-nav">
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='about.html'">About</button>
+        <button onclick="location.href='skills.html'">Skills</button>
+        <button onclick="location.href='services.html'">Services</button>
+        <button onclick="location.href='certificates.html'">Certificates</button>
+        <button onclick="location.href='contact.html'">Contact</button>
+      </div>
+      <div id="mobile-nav">
+        <button id="active-page">Skills</button>
+        <div id="menu-trigger" onclick="toggleDropdown()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="16" r="2"></circle>
+            <circle cx="16" cy="16" r="2"></circle>
+            <circle cx="24" cy="16" r="2"></circle>
+          </svg>
+        </div>
+        <div id="dropdown-menu">
+          <button onclick="location.href='../index.html'">Home</button>
+          <button onclick="location.href='about.html'">About</button>
+          <button onclick="location.href='services.html'">Services</button>
+          <button onclick="location.href='certificates.html'">Certificates</button>
+          <button onclick="location.href='contact.html'">Contact</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="skills-grid">
+      <div class="skill-card" id="#langs-card">
+        <div class="skill-card-content">
+          <div class="header">
+            <img src="https://img.icons8.com/?size=64&id=53451&format=png&color=000000"
+              alt="Programming Languages Icon">
+            <h2>Programming Languages</h2>
+          </div>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card" id="general-skills-card">
+        <div class="skill-card-content">
+          <div class="header">
+            <img src="https://img.icons8.com/?size=64&id=K7UWQpIZgEo1&format=png&color=000000"
+              alt="General Skills Icon">
+              <h2>General Skills</h2>
+          </div>
+          <ul>
+            <li>Problem-solving and analytical thinking</li>
+            <li>Team collaboration and communication</li>
+            <li>Agile and Scrum methodologies</li>
+            <li>Project management</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card" id="tools-card">
+        <div class="skill-card-content">
+          <div class="header">
+            <img src="https://img.icons8.com/?size=64&id=cLBsnBwmu2nE&format=png&color=000000"
+              alt="Tools Icon">
+              <h2>Tools</h2>
+          </div>
+          <ul>
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="final-row" id="final-card">
+        <div class="skill-card">
+          <div class="skill-card-content">
+            <div class="header">
+              <img src="https://img.icons8.com/?size=64&id=2778&format=png&color=000000"
+                alt="Frontend Icon">
+                <h2>Frontend</h2>
+            </div>
+            <ul>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>HTML/CSS</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="skill-card">
+          <div class="skill-card-content">
+            <div class="header">
+              <img src="https://img.icons8.com/?size=64&id=-cBJ1WI2qPwv&format=png&color=000000"
+                alt="Backend Icon">
+                <h2>Backend</h2>
+            </div>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>SQL</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <script src="scripts/nav.js"></script>
+</body>
+
+</html>

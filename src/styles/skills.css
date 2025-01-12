@@ -1,0 +1,112 @@
+@import "common.css";
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+.skill-card {
+  background-color: var(--card-bg);
+  border-radius: 0.75rem;
+  max-width: 24rem;
+  width: 100%;
+}
+
+.skill-card-content {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 2rem;
+}
+
+.skill-card .header {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card img {
+  width: 50px;
+}
+
+.skill-card h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+
+.skill-card ul {
+  list-style-type: disc;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+.skill-card ul li {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.final-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 4;
+  gap: 2rem;
+  width: 100%;
+}
+
+#langs-card {
+  order: 1;
+}
+
+#general-skills-card {
+  order: 2;
+}
+
+#tools-card {
+  order: 3;
+}
+
+#final-card {
+  order: 4;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0.25rem 1rem;
+    gap: 1rem;
+  }
+
+  .skill-card h2 {
+    font-size: 1rem;
+  }
+
+  .skill-card-content {
+    padding: 0.5rem;
+  }
+
+  .skill-card ul li {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
+
+  .skill-card ul {
+    padding-left: 1.5rem;
+  }
+
+  .final-row {
+    grid-column: span 2;
+    gap: 1rem;
+  }
+
+  #general-skills-card {
+    order: 3;
+    grid-column: span 2;
+  }
+
+  #tools-card {
+    order: 2
+  }
+}
